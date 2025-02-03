@@ -32,12 +32,8 @@ Instalação
 
 3. Instale as dependências:
    ```bash
-   pip install -r requirements.txt
+   pip install flask
    ```
-   > Se não houver um arquivo `requirements.txt`, instale manualmente:
-   > ```bash
-   > pip install flask
-   > ```
 
 Como Executar
 
