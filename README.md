@@ -45,6 +45,7 @@ Como Executar
 2. Acesse os endpoints:
    - Minerar um bloco: [http://127.0.0.1:5000/mine_block](http://127.0.0.1:5000/mine_block)
    - Visualizar a blockchain: [http://127.0.0.1:5000/get_chain](http://127.0.0.1:5000/get_chain)
+   - Verificar o blockchain: [http://127.0.0.1:5000/is_valid](http://127.0.0.1:5000/is_valid)
    
 Endpoints Disponíveis
 
@@ -54,6 +55,7 @@ Endpoints Disponíveis
 
 Futuras Melhorias
 
+- Criar um Criptoativo utilizando Smart Contracts
 - Implementação de transações reais entre usuários.
 - Integração de um sistema de consenso distribuído.
 - Interface web para interação com a blockchain.
