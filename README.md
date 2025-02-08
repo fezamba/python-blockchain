@@ -1,58 +1,57 @@
-Blockchain em Python com Flask
+## Blockchain in Python with Flask  
 
-Este projeto implementa uma blockchain simples utilizando Python e Flask, com endpoints REST para mineração de blocos e consulta da cadeia.
+This project implements a simple blockchain using Python and Flask, with REST endpoints for block mining and chain querying.  
 
-Funcionalidades
+### Features  
 
-- Mineração de blocos utilizando o algoritmo de Proof of Work (PoW).
-- Geração de hashes seguros com SHA-256.
-- API REST com endpoints para mineração e consulta da blockchain.
-- Validação da integridade da cadeia de blocos.
+- Block mining using the Proof of Work (PoW) algorithm.  
+- Secure hash generation with SHA-256.  
+- REST API with endpoints for mining and querying the blockchain.  
+- Validation of the blockchain's integrity.  
 
-Tecnologias Utilizadas
+### Technologies Used  
 
-- Python 3.12
-- Flask (Framework para criação de APIs REST)
-- Postman (para testes da API)
+- Python 3.12  
+- Flask (Framework for building REST APIs)  
+- Postman (for API testing)  
 
-Instalação
+### Installation  
 
-1. Clone o repositório:
+1. Clone the repository:  
    ```bash
-   git clone https://github.com/seu-usuario/python-blockchain.git
+   git clone https://github.com/your-username/python-blockchain.git
    cd python-blockchain
    ```
 
-2. Instale as dependências:
+2. Install dependencies:  
    ```bash
    pip install flask
    ```
 
-Como Executar
+### How to Run  
 
-1. Execute o servidor Flask:
+1. Start the Flask server:  
    ```bash
    python blockchain.py
    ```
 
-2. Acesse os endpoints:
-   - Minerar um bloco: [http://127.0.0.1:5000/mine_block](http://127.0.0.1:5000/mine_block)
-   - Visualizar a blockchain: [http://127.0.0.1:5000/get_chain](http://127.0.0.1:5000/get_chain)
-   - Verificar a blockchain: [http://127.0.0.1:5000/is_valid](http://127.0.0.1:5000/is_valid)
-   
-Endpoints Disponíveis
+2. Access the endpoints:  
+   - Mine a block: [http://127.0.0.1:5000/mine_block](http://127.0.0.1:5000/mine_block)  
+   - View the blockchain: [http://127.0.0.1:5000/get_chain](http://127.0.0.1:5000/get_chain)  
+   - Verify the blockchain: [http://127.0.0.1:5000/is_valid](http://127.0.0.1:5000/is_valid)  
 
-- `GET /mine_block`: Minera um novo bloco e o adiciona à blockchain.
-- `GET /get_chain`: Retorna toda a blockchain.
-- `GET /is_valid`: Verifica se a blockchain é válida.
+### Available Endpoints  
 
-Futuras Melhorias
+- `GET /mine_block`: Mines a new block and adds it to the blockchain.  
+- `GET /get_chain`: Returns the entire blockchain.  
+- `GET /is_valid`: Checks if the blockchain is valid.  
 
-- Criar um Criptoativo utilizando Smart Contracts
-- Implementação de transações reais entre usuários.
-- Integração de um sistema de consenso distribuído.
-- Interface web para interação com a blockchain.
+### Future Improvements  
 
-Fernando Azambuja  
-[LinkedIn](https://www.linkedin.com/feazambuja)  
+- Create a cryptocurrency using Smart Contracts.  
+- Implement real transactions between users.  
+- Integrate a distributed consensus system.  
+- Develop a web interface for blockchain interaction.  
 
+**Fernando Azambuja**  
+[LinkedIn](https://www.linkedin.com/feazambuja)
