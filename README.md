@@ -54,4 +54,4 @@ This project implements a simple blockchain using Python and Flask, with REST en
 - Develop a web interface for blockchain interaction.  
 
 **Fernando Azambuja**  
-[LinkedIn](https://www.linkedin.com/feazambuja)
+[LinkedIn](https://www.linkedin.com/in/feazambuja)
