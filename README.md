@@ -1,57 +1,88 @@
-## Blockchain in Python with Flask  
+# Zambacoin - Python Blockchain
 
-This project implements a simple blockchain using Python and Flask, with REST endpoints for block mining and chain querying.  
+Zambacoin is a simple blockchain implementation using Python and Flask. This project allows mining new blocks, handling transactions, and maintaining a distributed ledger with a consensus protocol.
 
-### Features  
+## 🚀 Features
+- Blockchain creation and validation
+- Proof-of-work mining
+- Transaction management
+- Decentralized node registration
+- Consensus algorithm for chain synchronization
 
-- Block mining using the Proof of Work (PoW) algorithm.  
-- Secure hash generation with SHA-256.  
-- REST API with endpoints for mining and querying the blockchain.  
-- Validation of the blockchain's integrity.  
+## 📦 Installation
 
-### Technologies Used  
-
-- Python 3.12  
-- Flask (Framework for building REST APIs)  
-- Postman (for API testing)  
-
-### Installation  
-
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/your-username/python-blockchain.git
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/fezamba/python-blockchain.git
+   ```
+2. Navigate to the project directory:
+   ```sh
    cd python-blockchain
    ```
-
-2. Install dependencies:  
-   ```bash
-   pip install flask
+3. Install dependencies:
+   ```sh
+   pip install flask requests
    ```
 
-### How to Run  
+## 🏃 Running the Blockchain
 
-1. Start the Flask server:  
-   ```bash
-   python blockchain.py
-   ```
+Start the Flask server:
+```sh
+python blockchain.py
+```
+The blockchain will be accessible at `http://127.0.0.1:5000/`.
 
-2. Access the endpoints:  
-   - Mine a block: [http://127.0.0.1:5000/mine_block](http://127.0.0.1:5000/mine_block)  
-   - View the blockchain: [http://127.0.0.1:5000/get_chain](http://127.0.0.1:5000/get_chain)  
-   - Verify the blockchain: [http://127.0.0.1:5000/is_valid](http://127.0.0.1:5000/is_valid)  
+## 📡 API Endpoints
 
-### Available Endpoints  
+### ⛏️ Mine a Block
+- **Endpoint:** `/mine_block`
+- **Method:** `GET`
+- **Description:** Mines a new block and rewards the miner.
 
-- `GET /mine_block`: Mines a new block and adds it to the blockchain.  
-- `GET /get_chain`: Returns the entire blockchain.  
-- `GET /is_valid`: Checks if the blockchain is valid.  
+### 🔗 Get the Blockchain
+- **Endpoint:** `/get_chain`
+- **Method:** `GET`
+- **Description:** Retrieves the entire blockchain.
 
-### Future Improvements  
+### ✅ Check Chain Validity
+- **Endpoint:** `/is_valid`
+- **Method:** `GET`
+- **Description:** Validates the blockchain integrity.
 
-- Create a cryptocurrency using Smart Contracts.  
-- Implement real transactions between users.  
-- Integrate a distributed consensus system.  
-- Develop a web interface for blockchain interaction.  
+### 💸 Add a Transaction
+- **Endpoint:** `/add_transaction`
+- **Method:** `POST`
+- **Payload:**
+  ```json
+  {
+    "sender": "Alice",
+    "receiver": "Bob",
+    "amount": 10
+  }
+  ```
+- **Description:** Adds a new transaction to the next block.
+
+### 🌍 Connect a Node
+- **Endpoint:** `/connect_node`
+- **Method:** `POST`
+- **Payload:**
+  ```json
+  {
+    "nodes": ["http://127.0.0.1:5001"]
+  }
+  ```
+- **Description:** Registers a new node in the network.
+
+### 🔄 Replace the Chain
+- **Endpoint:** `/replace_chain`
+- **Method:** `GET`
+- **Description:** Replaces the current chain with the longest valid chain from the network.
+
+## 🤝 Contributing
+Feel free to fork this project and submit pull requests! 🚀
+
+## 📜 License
+This project is open-source and available under the [MIT License](LICENSE).
 
 **Fernando Azambuja**  
 [LinkedIn](https://www.linkedin.com/in/feazambuja)
