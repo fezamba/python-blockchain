@@ -28,9 +28,18 @@ Zambacoin is a simple blockchain implementation using Python and Flask. This pro
 
 Start the Flask server:
 ```sh
-python blockchain.py
+python zambacoin.py
 ```
 The blockchain will be accessible at `http://127.0.0.1:5000/`.
+
+### Running Multiple Nodes Locally
+To create multiple nodes locally, you need to change the port when running the server. Example:
+```sh
+python zambacoin.py -p 5001
+python zambacoin.py -p 5002
+python zambacoin.py -p 5003
+```
+This will start three nodes running on ports 5001, 5002, and 5003.
 
 ## 📡 API Endpoints
 
@@ -80,9 +89,6 @@ The blockchain will be accessible at `http://127.0.0.1:5000/`.
 
 ## 🤝 Contributing
 Feel free to fork this project and submit pull requests! 🚀
-
-## 📜 License
-This project is open-source and available under the [MIT License](LICENSE).
 
 **Fernando Azambuja**  
 [LinkedIn](https://www.linkedin.com/in/feazambuja)
