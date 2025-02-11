@@ -10,7 +10,7 @@ Zambacoin is a simple blockchain implementation using Python and Flask. This pro
 - Consensus algorithm for chain synchronization
 
 ## To-Do
-- Develop(ing) a prototype of an ICO. Using Solidity to develop the smart contract for this ICO
+- Develop a prototype for an ICO using Solidity to create the smart contract.
 
 ### Running Multiple Nodes Locally
 To create multiple nodes locally, you need to change the port when running the server. Example in files:
