@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8;
 
 contract ZambaCoinICO {
     uint public constant max_zambacoins = 1000000;
