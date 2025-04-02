@@ -2,8 +2,8 @@
 pragma solidity ^0.8.0;
 
 contract ZambaCoinICO {
-    uint256 public constant max_zambacoins = 1000000;
-    uint256 public constant ether_to_zambacoins = 1000;
+    uint256 public constant max_zambacoins = 1000;
+    uint256 public constant ether_to_zambacoins = 10;
     uint256 public total_zambacoins_bought = 0;
 
     mapping(address => uint256) private equity_zambacoins;
