@@ -44,7 +44,7 @@ contract ZambaCoinICO {
         emit ZambacoinsSold(msg.sender, zambacoins_to_sell);
     }
 
-    function zambacoins_left_to_sale() view public returns (uint256) {
+    function zambacoins_left_for_sale() view public returns (uint256) {
     return max_zambacoins - total_zambacoins_bought;
     }
 }
