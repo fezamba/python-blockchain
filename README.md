@@ -8,8 +8,21 @@
 - Transaction management
 - Decentralized node registration
 - Consensus algorithm for chain synchronization
-- Initial Coin Offering (ICO)
+- Initial Coin Offering (ICO) simulation (prototyped)
 
+## Installation
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/fezamba/python-blockchain.git
+   cd python-blockchain
+   ```
+
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+   
 ### Running Multiple Nodes Locally
 To simulate multiple nodes locally, run separate Python files on different ports:
 ```sh
