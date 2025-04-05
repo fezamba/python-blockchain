@@ -23,7 +23,7 @@
    pip install -r requirements.txt
    ```
    
-### Running Multiple Nodes Locally
+## Running Multiple Nodes Locally
 To simulate multiple nodes locally, run separate Python files on different ports:
 ```sh
 zambacoin_node_5001.py
