@@ -1,6 +1,6 @@
 # Zambacoin - Python Blockchain
 
-Zambacoin is a simple blockchain implementation using Python and Flask. This project allows mining new blocks, handling transactions, and maintaining a distributed ledger with a consensus protocol.
+**Zambacoin** is a basic blockchain prototype built with **Python** and **Flask**, designed for learning purposes and experimentation. It supports mining, transaction management, node connectivity, and a basic consensus mechanism.
 
 ## Features
 - Blockchain creation and validation
