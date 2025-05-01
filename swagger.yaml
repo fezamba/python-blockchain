@@ -1,0 +1,110 @@
+openapi: 3.0.0
+info:
+  title: Zambacoin Blockchain API
+  version: 1.0.0
+  description: Modular educational blockchain in Python with mining, transactions, node sync, and basic consensus.
+
+servers:
+  - url: http://localhost:5001
+    description: Local node
+
+paths:
+  /mine_block:
+    get:
+      summary: Mine a new block
+      responses:
+        '200':
+          description: Block mined successfully
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /get_chain:
+    get:
+      summary: Get the full blockchain
+      responses:
+        '200':
+          description: Returns the list of all blocks
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /is_valid:
+    get:
+      summary: Check if the blockchain is valid
+      responses:
+        '200':
+          description: Blockchain validity status
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /add_transaction:
+    post:
+      summary: Add a new transaction
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - sender
+                - receiver
+                - amount
+              properties:
+                sender:
+                  type: string
+                  example: Alice
+                receiver:
+                  type: string
+                  example: Bob
+                amount:
+                  type: number
+                  example: 10
+      responses:
+        '201':
+          description: Transaction added successfully
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /connect_node:
+    post:
+      summary: Connect new nodes to the network
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - nodes
+              properties:
+                nodes:
+                  type: array
+                  items:
+                    type: string
+                  example: ["http://127.0.0.1:5002", "http://127.0.0.1:5003"]
+      responses:
+        '201':
+          description: Nodes connected successfully
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /replace_chain:
+    get:
+      summary: Replace the current chain with the longest valid one
+      responses:
+        '200':
+          description: Chain replacement result
+          content:
+            application/json:
+              schema:
+                type: object
