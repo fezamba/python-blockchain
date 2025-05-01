@@ -1,0 +1,37 @@
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
+.idea/
+
+# Sensitive or temporary files
+*.log
+*.tmp
+
+# Solidity compiled artifacts
+*.abi
+*.bin
+
+# Local blockchain data
+data/nodes.json
+data/transaction.json
+
+# Database files
+*.sqlite3
+*.db
+
+# Git-related temporary files
+*.swp
+*.swo
