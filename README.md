@@ -86,19 +86,6 @@ To sync multiple nodes:
 
 ---
 
-## 🧠 Things I Might Add Later
-
-| Feature                             | Feasible? | Notes                                                   |
-|-------------------------------------|-----------|----------------------------------------------------------|
-| ECDSA transaction signing           | ✅ Easy    | Using `ecdsa` or `cryptography` lib                     |
-| Persistent DB (SQLite, TinyDB)      | ✅ Easy    | Swap in-memory list for storage                         |
-| Flask Blueprints                    | ✅ Easy    | Better modularity for routes                            |
-| Dashboard (React/HTML)              | ✅ Easy    | Visualize chain, tx pool, and peers                     |
-| Smart contract support (Solidity)   | ⚠️ Medium  | Would need Ganache + `web3.py`                          |
-| MetaMask/Web3 integration           | ⚠️ Medium  | Could expose backend to a Web3 front-end later on       |
-
----
-
 ## 📄 License
 
 MIT — use this code for learning, remixing, or building your own version.
