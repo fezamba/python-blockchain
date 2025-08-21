@@ -1,6 +1,6 @@
 openapi: 3.0.0
 info:
-  title: Zambacoin Blockchain API
+  title: Blockchain API
   version: 1.0.0
   description: Modular educational blockchain in Python with mining, transactions, node sync, and basic consensus.
 
