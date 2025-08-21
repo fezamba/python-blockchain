@@ -1,6 +1,6 @@
-# Zambacoin – Learning Blockchain with Python
+# Learning Blockchain with Python
 
-Zambacoin is a personal learning project I built to understand how blockchains work under the hood.  
+Personal learning project I built to understand how blockchains work under the hood.  
 It's written in Python using Flask and simulates core concepts like Proof of Work mining, transactions, basic consensus, and multi-node synchronization — all in a simple, readable structure.
 
 This isn't production-ready — it's just me exploring how to actually build a blockchain from scratch, step by step.
