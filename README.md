@@ -10,7 +10,7 @@ This isn't production-ready — it's just me exploring how to actually build a b
 ## Project Structure
 
 ```
-zambacoin/
+python-blockchain/
 ├── core/                  # Blockchain logic
 │   └── blockchain.py
 ├── api/                   # REST API with Flask
