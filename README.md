@@ -15,7 +15,7 @@ python-blockchain/
 │   └── blockchain.py
 ├── api/                   # REST API with Flask
 │   └── routes.py
-├── run.py                 # Main entrypoint (port passed as CLI arg)
+├── run.py                 # Main entrypoint
 ├── requirements.txt
 └── README.md
 ```
